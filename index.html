@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe Game</title>
+</head>
+
+<body id="body" onload="which_first()">
+    <!-- Calls the function player_move in script.-->
+    <!--S is for space on board.
+      0 1 2
+      3 4 5
+      6 7 8
+    -->
+    <div align="center">Let's play tic tac toe! You are X and the computer is O. Click a square to put an X on it.</div>
+    <div align="center" id = "firstMove"></div>
+    <div align="center" display="inline-block">
+      <button id = "S0" style="height:100px;width:100px" onclick="player_move('S0');">S0</button>
+      <button id = "S1" style="height:100px;width:100px" onclick="player_move('S1');">S1</button>
+      <button id = "S2" style="height:100px;width:100px" onclick="player_move('S2');">S2</button>
+      <p></p>
+      <button id = "S3" style="height:100px;width:100px" onclick="player_move('S3');">S3</button>
+      <button id = "S4" style="height:100px;width:100px" onclick="player_move('S4');">S4</button>
+      <button id = "S5" style="height:100px;width:100px" onclick="player_move('S5');">S5</button>
+      <p></p>
+      <button id = "S6" style="height:100px;width:100px" onclick="player_move('S6');">S6</button>
+      <button id = "S7" style="height:100px;width:100px" onclick="player_move('S7');">S7</button>
+      <button id = "S8" style="height:100px;width:100px" onclick="player_move('S8');">S8</button>
+    </div>
+
+    <script type="text/javascript" src="script4.js"></script>
+    <!-- Order of tabs matters apparently. If you don't have them in the correct order, changes won't be permanent.-->
+    <div align="center">
+        <a href="https://vader-coder.github.io/">Click to restart the game.</a>
+    </div>
+    <p align="center"></p>
+    <b align="center" id="victory" color="green"></b>
+    <p align="center"></p>
+    <a align="center" href="mathtest.html">Go to the Matrix Math Page</a>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@1.1.2/nerdamer.core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@1.1.2/Algebra.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@1.1.2/Calculus.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@1.1.2/Extra.js"></script>
+  </head>
+  <body onload="goInvert2()">
+    <a href="index.html">Go back to tic-tac-toe page.</a>
+    <p></p>
+    <p id="answer"></p>
+    <!--<script src="nerdamer.core.js"></script>
+    <script src="Algebra.js"></script>
+    <script src="Calculus.js"></script>
+    <script src="Solve.js"></script>
+    <script src="Extra.js"></script>-->
+    <script type="text/javascript">
+      console.log(math.sqrt(-4).toString()); // 2i
+      function goInvert2() {
+        nerdamer.setVar('M', 'matrix([a, b], [x^2, y-4])');
+        var x = nerdamer('a*x*M');
+        console.log("goInvert2() is running1");
+        console.log(x.toString());
+        document.getElementById("answer").innerHTML = x.toString();
+      }
+    </script>
+    <script type="text/javascript" src="mathscript.js"></script>
+  </body>
+</html>
